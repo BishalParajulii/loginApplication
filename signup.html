@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup Page</title>
+        <link rel="stylesheet" href="signup.css">
+    </head>
+    <body>
+        <!-- multistep form -->
+<form id="msform">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Personal Details</li>
+      <li>Email and Password</li>
+      
+      <li>education</li>
+       
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+      <h2 class="fs-title">Create your account</h2>
+      <h3 class="fs-subtitle">Enter Your Details</h3>
+      <input type="text" name="fname" placeholder="First Name" id="firstName" required/>
+      <input type="text" name="lname" placeholder="Last Name" id="lastName" required/>
+      <input type="text" name="phone" placeholder="Phone" id="phone" required/>
+      <input type="text" name="address" placeholder="Address" id="address" required/>
+      <input type="button" name="next" class="next action-button" value="Next" id="firstNext" required/>
+      <br>
+      <a href="signin.html" class="dnthave">Already have accouny? sign in</a>
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Email and Passwords</h2>
+      <h3 class="fs-subtitle">Your email and password</h3>
+      <input type="text" name="Email" placeholder="Email" />
+      <input type="password" name="pass" placeholder="Password" />
+      <input type="password" name="cpass" placeholder="Re-type Password" />
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Personal Details</h2>
+      <h3 class="fs-subtitle">We will never sell it</h3>
+      <input type="text" name="name" placeholder="Name" />
+      <input type="number" name="phoneNumber" placeholder="Mobile Number" />
+      <input type="est" name="address" placeholder="Current Address" />
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <a href="https://twitter.com/GoktepeAtakan" class="submit action-button" target="_top">Submit</a>
+    </fieldset>
+  </form>
+     <script src="signup.js"></script>
+    </body>
+</html>
